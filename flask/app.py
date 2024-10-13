@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from my_script import sample_function
 
 app = Flask(__name__)
 
@@ -9,7 +10,7 @@ def run_script():
 
     # ... (Call your Python script here) ...
     # Example:
-    result = run_my_script(data)  
+    result = sample_function
 
     return jsonify({'result': result})
 
